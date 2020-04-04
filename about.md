@@ -13,8 +13,8 @@ framework into a new organization.
 
 * [Email me](mailto:dan+ddx@danslimmon.com) any questions about differential diagnosis or about this
     website. I love to chat about this stuff!
-* [Follow the website](https://twitter.com/ddxcomputer) on Twitter for updates, tips, and case studies
 * [Submit a PR to the website](https://github.com/danslimmon/ddxcomputer) if you have a resource to add,
     or anything you think you can help clarify
+* [Follow the website](https://twitter.com/ddxcomputer) on Twitter for updates, tips, and case studies
 * [Follow _me_](https://twitter.com/danslimmon) on Twitter (at your own peril: my tweets are not
     generally what one would call "professional")

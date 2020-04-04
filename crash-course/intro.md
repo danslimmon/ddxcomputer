@@ -1,8 +1,12 @@
 ---
 layout: "page"
-title: "DDx crash course: Overview"
+title: "Overview – DDx crash course"
 permalink: "/crash-course/intro"
 ---
+
+**Back to:** [Home](/)
+
+**Next:** [Symptoms](symptoms)
 
 This crash course is designed to give you a solid understanding of the differential diagnosis
 framework as we use it in software troubleshooting. You'll learn some fundamental vocabulary, which
