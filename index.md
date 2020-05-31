@@ -20,3 +20,4 @@ team:
 * **[Outside resources](/outside-resources)**: Links to further reading on DDx and related concepts.
 * **[Me!](/about)**: I've been doing this for a long time, and I'd love to hear about how
     you use DDx in your org or discuss any challenges you've had with it.
+* **[Qed](https://github.com/danslimmon/qed)**: Qed is a troubleshooting tool for distributed teams. It keeps complex investigations coherent.
