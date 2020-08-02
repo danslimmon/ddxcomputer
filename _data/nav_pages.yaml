@@ -1,0 +1,5 @@
+---
+- path: about.md
+  name: About
+- path: crash-course/intro.md
+  name: Crash Course
