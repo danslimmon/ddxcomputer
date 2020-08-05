@@ -67,14 +67,14 @@ More is said on the subject of team composition in the [Getting Started guide](/
 
 Imagine, for one brief, magical moment, that you're a Ruby on Rails developer. Your team owns a
 microservice – let's call it *Argos* – whose job is to serve up data to the main customer-facing web
-app – which we'll call *Vasa*.
+app, which we'll call *Vasa*.
 
 ```
-diagram
+diagram of example network
 ```
 
 Over the last few weeks, people have started to notice an uptick in the number of error responses
-coming from an *Vasa* that seem to be indicate a problem retrieving data from *Argos*. You, as the
+coming from *Vasa* that seem to be indicate a problem retrieving data from *Argos*. You, as the
 engineer most familiar with the inner workings of this particular code path in *Argos*, are asked to
 investigate and fix this new problem.
 
@@ -86,7 +86,10 @@ the error thrown by *Vasa* pretty unambiguously implicates *Argos*:
 Error retrieving payload from Argos: HTTP request failed
 ```
 
-What can you do? You're not familiar with *Vasa*'s codebase or even the language it's written in.
+Worse still, this error seems only to happen sporadically: about once in every 10,000 requests.
+That's going to make it really hard to pin down.
+
+What can you do? You're not familiar with *Vasa*'s codebase, or even the language it's written in.
 The developers of *Vasa*, conversely, don't know anything about *Argos* except that it's supposed to
 return payloads of a given form in response to requests. And when you asked the SREs to help you
 look for a network issue, they told you it would be like finding a needle in a hay stack.
