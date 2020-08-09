@@ -72,4 +72,61 @@ has not yet been thought of. By focusing on falsifying hypotheses rather than co
 can hone in on a cogent and consistent explanation for the problem without getting lured into tunnel
 vision.
 
+## Example
+
+```
+diagram of example network
+```
+
+"Alright," you proceed, "what are some things that could explain these symptoms?" The assembled
+troubleshooters ponder the symptoms in the shared document:
+
+1. Sporadic customer-facing errors from *Vasa*: `Error retrieving payload from Argos: HTTP request
+   failed.`
+2. No corresponding access log messages from *Argos*
+3. These errors only seem to occur during periods of high traffic volume
+4. Multiple different customers have experienced this issue while trying to perform multiple
+   different kinds of operations
+5. The frequency of this failure mode has been increasing gradually for at least 3 months
+
+The *Vasa* dev pipes up, reiterating the idea that he initially brought up as a potential symptom:
+"*Argos* is dropping requests."
+
+"Okay, I'll put that down. Just to make sure we're not ambiguous: you're saying that requests from
+*Vasa* are reaching *Argos* at the TCP level, but *Argos*'s business logic for some reason never
+starts handling the request?" The *Vasa* dev nods. You write it down:
+
+* The web server in front of *Argos* fails to pass certain requests to the service.
+
+You could break this down into further hypotheses if you wanted. There could be any number of
+reasons _why_ the web server might be dropping these requests, and each of those reasons could be
+its own line in the hypothesis section of the DDx doc. But at this point, when you're still trying
+to sketch the outlines of the problem, you decide that this hypothesis is just fine. But you do add
+another, "sister" hypothesis to describe a slightly different scenario:
+
+* *Argos* starts processing the request, but crashes without logging an error.
+
+The SRE on the squad is the next to suggest a hypothesis: "Maybe CPU usage on the *Argos* server
+gets too high and it can't respond?"
+
+You think for a moment before replying, "If that's true, how does it explain the symptoms that we've
+observed? How would high CPU utilization lead to these *Vasa* errors?"
+
+"The request would time out because *Argos* would be processing it too slowly."
+
+"Gotcha," you say. "But then aren't we talking about a subtype of the first hypothesis? If there's a
+timeout, it means *Argos* crashes before it's done handling the request." The SRE muses on this for
+a moment before agreeing.
+
+About ten minutes later, the group has come up with a pretty good list of hypotheses, all of which
+are ostensibly testable and explanatory:
+
+1. The web server in front of *Argos* fails to pass certain requests to the service.
+2. *Argos* starts processing the request, but crashes without logging an error.
+3. *Vasa* can't connect to *Argos* due to a network split.
+4. There's a bug in *Vasa* that prevents the request to *Argos* from ever being attempted.
+
+This is a good starting point. You decide to move on the third phase of differential diagnosis:
+deciding on some actions to take.
+
 **Next:** [Actions](actions)

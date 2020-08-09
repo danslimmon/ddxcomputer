@@ -66,10 +66,12 @@ You write down a couple of symptoms off the top of your head, to get some moment
   failed.`
 * No corresponding access log messages from *Argos*
 
-Now you stop writing and wait for the rest of the troubleshooting squad to shout out more systems.
-After a pregnant pause, the support rep pipes up:
+Now you stop writing and wait for the rest of the troubleshooting squad to shout out more symptoms.
+After a slightly awkward pause, the support rep pipes up:
 
 * These errors only seem to occur during periods of high traffic volume
+
+"Good one!" you say, adding it to the doc. "What else?"
 
 Next to speak is the *Vasa* engineer. "Well," he opines, "one symptom is that *Argos* is dropping
 requests, right?"
