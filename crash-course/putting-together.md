@@ -27,3 +27,18 @@ differential diagnosis gets easier and more effective with practice. Try it out,
 with your team, and adjust your practices as you figure out what makes sense for you. And if you
 learn something interesting, or have a cool story to tell about your experience with differential
 diagnosis, please don't hesitate to [hit us up](../contact)!
+
+## Example
+
+Every day, the squad meets to go through the differential diagnosis process.
+
+You start by reviewing the symptoms: are all the symptoms documented still relevant and accurate?
+Should any new pieces of information be added to the list?
+
+Then you talk about hypotheses. Can you rule any out based on the outcomes of recent actions? Have
+any new hypotheses come to light? Is it perhaps time to break a hypothesis down into some more
+specific ones?
+
+Finally, you come to the actions. You write down the results of any actions that have been
+completed, and you come up with new actions (including at least one test action!) that will move the
+troubleshooting effort forward.
