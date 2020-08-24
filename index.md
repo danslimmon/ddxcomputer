@@ -8,6 +8,15 @@ solving problems in complex systems. Differential diagnosis keeps us from fallin
 common pitfalls of cross-role troubleshooting: information siloing, toe-stepping, and loss of
 direction.
 
+In order to solve a complex problem using differential diagnosis, we start by forming a small team
+called a *coven*. The coven meets daily for a short *DDx session*. In the DDx session, we first
+write down the *symptoms* we can observe. Then, we come up with some *hypotheses* that could
+possibly explain those symptoms. And finally, we agree upon a set of *actions* to take. Once those
+actions have been taken, we meet back up for another DDx session. We iterate through this process
+until we've understood the problem we're trying to understand.
+
+![Overview of the DDx process](assets/ddx_overview.png)
+
 This site puts together a bunch of resources for learning about DDx and implementing it on your
 team:
 
